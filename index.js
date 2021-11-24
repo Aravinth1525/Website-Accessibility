@@ -3,7 +3,7 @@ const express = require('express')
 
 const pa11y = require('pa11y')
 
-const PORT = process.env.port || 3000
+const PORT = process.env.PORT || 3000
 const app=express()
 
 app.use(express.static('public'))
@@ -18,4 +18,4 @@ app.get('/api/test', async (req, res) => {
 })
 
 
-app.listen(port, () => console.log(`Server started on port ${port}`))
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
